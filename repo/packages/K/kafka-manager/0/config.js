@@ -40,7 +40,6 @@
       },
       "required": [
         "framework-name",
-        "host",
         "cpus",
         "mem",
         "instances",
