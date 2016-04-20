@@ -8,7 +8,7 @@
   "assets": {
     "container": {
       "docker": {
-        "e84d2658d662": "sheepkiller/kafka-manager:1.3.0.8"
+        "kafka-manager-docker: "sheepkiller/kafka-manager:1.3.0.8"
       }
     }
   }
