@@ -33,8 +33,8 @@
                             "default": 1
                         },
                         "application_secret": {
-                            "description": "The secret key is used to secure cryptographics functions"
-                            "type": "string"
+                            "description": "The secret key is used to secure cryptographics functions",
+                            "type": "string",
                             "default": "^<csmm5Fx4d=r2HEX8pelM3iBkFVv?k[mc;IZE<_Qoq8EkX_/7@Zt6dP05Pzea3U"
                         }
                     },
