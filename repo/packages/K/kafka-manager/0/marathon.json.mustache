@@ -1,0 +1,34 @@
+{
+  "id": "{{kafka-manager.framework-name}}",
+  "cpus": {{kafka-manager.cpus}},
+  "mem": {{kafka-manager.mem}},
+  "instances": {{kafka-manager.instances}},
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "{{resource.assets.container.docker.kafka-manager-docker}}",
+      "forcePullImage": true,
+      "network": "BRIDGE",
+      "portMappings": [{ "containerPort": 9000, "protocol": "tcp" }]
+    }
+  },
+  "healthChecks": [
+    {
+      "gracePeriodSeconds": 120,
+      "intervalSeconds": 30,
+      "maxConsecutiveFailures": 0,
+      "path": "/status",
+      "portIndex": 0,
+      "protocol": "HTTP",
+      "timeoutSeconds": 5
+    }
+  ],
+  "ports": [],
+  "env": {
+    "ZK_HOSTS": "{{kafka-manager.zk}}",
+    "APPLICATION_SECRET": "{{kafka-manager.application_secret}}"
+  },
+  "labels": {
+    "DCOS_PACKAGE_FRAMEWORK_NAME": "{{kafka-manager.framework-name}}"
+  }
+}
