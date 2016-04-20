@@ -31,7 +31,7 @@
                             "description": "app instances",
                             "type": "integer",
                             "default": 1
-                        }
+                        },
                         "application_secret": {
                             "description": "The secret key is used to secure cryptographics functions"
                             "type": "string"
@@ -40,10 +40,9 @@
                     },
                     "required": ["cpus", "mem", "instances", "heap-mb"]
                 },
-
                 "zk": {
                     "type": "string",
-                    "description": "ZK URL for Kafka",
+                    "description": "ZK URL for Kafka-manager",
                     "default": "master.mesos:2181"
                 }
             },
