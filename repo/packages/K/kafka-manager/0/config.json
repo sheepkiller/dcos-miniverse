@@ -7,7 +7,7 @@
         "description": "DC/OS service configuration properties",
         "properties":{
             "name" : {
-                "description":"The name of the MySQL service instance",
+                "description":"The name of the kafka-manager service instance.",
                 "type":"string",
                 "default":"kafka-manager"
             }
@@ -54,6 +54,7 @@
     }
   },
   "required": [
+
     "kafka-manager"
   ]
 }
