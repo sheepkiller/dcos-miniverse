@@ -1,5 +1,5 @@
 {
-  "id": "{{kafka-manager.framework-name}}",
+  "id": "{{kafka-manager.service-name}}",
   "cpus": {{kafka-manager.cpus}},
   "mem": {{kafka-manager.mem}},
   "instances": {{kafka-manager.instances}},
@@ -29,6 +29,8 @@
     "APPLICATION_SECRET": "{{kafka-manager.application_secret}}"
   },
   "labels": {
-    "DCOS_PACKAGE_FRAMEWORK_NAME": "{{kafka-manager.framework-name}}"
+    "DCOS_SERVICE_NAME": "{{kafka-manager.service-name}}",
+    "DCOS_SERVICE_SCHEME": "http",
+    "DCOS_SERVICE_PORT_INDEX": "0"
   }
 }

@@ -8,8 +8,8 @@
   "framework": false,
   "tags": ["message", "broker", "messaging", "IoT"],
   "preInstallNotes": "You need a live kafka cluster.",
-  "postInstallNotes": "",
-  "postUninstallNotes": "",
+  "postInstallNotes": "kafka-manager has been installed. Persistent data are stored in the zookeeper cluster you previously defined",
+  "postUninstallNotes": "kafka-manager has been installed. Please not that persistent are still in your zookeeper cluster, under /kafka-manager node.",
   "licenses": [
     {
       "name": "Apache License Version 2.0",
