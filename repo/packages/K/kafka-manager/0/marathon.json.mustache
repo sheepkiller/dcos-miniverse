@@ -25,8 +25,7 @@
   ],
   "ports": [],
   "env": {
-    "ZK_HOSTS": "{{kafka-manager.zk}}",
-    {{#kafka-manager.application_secret}}
+    "ZK_HOSTS": "{{kafka-manager.zk}}"{{#kafka-manager.application_secret}},
     "APPLICATION_SECRET": "{{kafka-manager.application_secret}}"
     {{/kafka-manager.application_secret}}
   },
