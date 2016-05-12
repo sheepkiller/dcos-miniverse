@@ -2,16 +2,22 @@
   "$schema": "http://json-schema.org/schema#",
   "type": "object",
   "properties": {
+    "service":{
+        "type":"object",
+        "description": "DC/OS service configuration properties",
+        "properties":{
+            "name" : {
+                "description":"The name of the MySQL service instance",
+                "type":"string",
+                "default":"kafka-manager"
+            }
+        }
+    },
     "kafka-manager": {
       "additionalProperties": false,
       "description": "Kafka-manager configuration properties",
       "type": "object",
       "properties": {
-        "service-name": {
-          "description": "The framework name to register with marathon.",
-          "type": "string",
-          "default": "kafka-manager"
-        },
         "cpus": {
             "description": "CPU shares to allocate.",
             "type": "number",
