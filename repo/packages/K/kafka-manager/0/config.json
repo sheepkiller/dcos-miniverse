@@ -40,7 +40,7 @@
         }
       },
       "required": [
-        "framework-name",
+        "service-name",
         "cpus",
         "mem",
         "instances",
