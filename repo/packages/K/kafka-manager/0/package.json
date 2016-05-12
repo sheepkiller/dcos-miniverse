@@ -5,7 +5,6 @@
   "scm": "https://github.com/yahoo/kafka-manager",
   "maintainer": "clement.laforet@cotds.org",
   "description": "A tool for managing Apache Kafka",
-  "framework": false,
   "tags": ["message", "broker", "messaging", "IoT"],
   "preInstallNotes": "You need a live kafka cluster.",
   "postInstallNotes": "kafka-manager has been installed. Persistent data are stored in the zookeeper cluster you previously defined",
