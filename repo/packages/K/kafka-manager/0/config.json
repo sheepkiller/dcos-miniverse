@@ -46,7 +46,6 @@
         }
       },
       "required": [
-        "service-name",
         "cpus",
         "mem",
         "instances",
