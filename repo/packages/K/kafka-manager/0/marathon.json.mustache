@@ -26,7 +26,7 @@
   "ports": [],
   "env": {
     "ZK_HOSTS": "{{kafka-manager.zk}}",
-    "KM_ARGS": "-Dkafka-manager.base-zk-path=/{{service.name}} -DbasicAuthentication.enabled=true -DbasicAuthentication.realm='{{service.name}} '-DbasicAuthentication.username='{{kafka-manager.username}}' -DbasicAuthentication.password='{{kafka-manager.password}}'"
+    "KM_ARGS": "-Dkafka-manager.base-zk-path=/{{service.name}} -DbasicAuthentication.enabled=true -DbasicAuthentication.realm='{{service.name}}' -DbasicAuthentication.username='{{kafka-manager.username}}' -DbasicAuthentication.password='{{kafka-manager.password}}'"
     {{#kafka-manager.application_secret}},
     "APPLICATION_SECRET": "{{kafka-manager.application_secret}}"
     {{/kafka-manager.application_secret}}
