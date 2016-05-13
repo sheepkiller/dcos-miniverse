@@ -53,7 +53,7 @@
         "password": "Administror password",
         "type" : "string",
         "default": "kafka-manager",
-        "pattern": "/^[\dA-Za-z!#$&%*+=?|^-]*$/"
+        "pattern": "/^[\\dA-Za-z!#$&%*+=?|^-]*$/"
       },
       "required": [
         "cpus",
