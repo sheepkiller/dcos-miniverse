@@ -50,10 +50,12 @@
           "default": "admin",
           "pattern": "[a-zA-Z0-9_-]"
         },
-        "password": "Administror password",
-        "type" : "string",
-        "default": "kafka-manager",
-        "pattern": "/^[\\dA-Za-z!#$&%*+=?|^-]*$/"
+        "password": {
+          "description": "Administror password",
+          "type" : "string",
+          "default": "kafka-manager",
+          "pattern": "/^[\\dA-Za-z!#$&%*+=?|^-]*$/"
+        }
       },
       "required": [
         "cpus",
