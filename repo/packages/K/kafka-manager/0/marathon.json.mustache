@@ -23,7 +23,18 @@
       "timeoutSeconds": 5
     }
   ],
-  "ports": [],
+  "ports": [0],
+  "healthChecks": [
+    {
+      "protocol": "HTTP",
+      "path": "/",
+      "gracePeriodSeconds": 120,
+      "intervalSeconds": 60,
+      "portIndex": 0,
+      "timeoutSeconds": 30,
+      "maxConsecutiveFailures": 3
+    }
+  ]
   "env": {
     "ZK_HOSTS": "{{kafka-manager.zk}}"{{#kafka-manager.application_secret}},
     "APPLICATION_SECRET": "{{kafka-manager.application_secret}}"
