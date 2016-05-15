@@ -10,7 +10,8 @@
         "message",
         "broker",
         "messaging",
-        "IoT"
+        "management",
+        "kafka"
       ],
       "versions":{
         "1.3.0.8":"0"
