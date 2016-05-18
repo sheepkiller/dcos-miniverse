@@ -9,7 +9,14 @@
       "image": "{{resource.assets.container.docker.kafka-manager-docker}}",
       "forcePullImage": true,
       "network": "BRIDGE",
-      "portMappings": [{ "containerPort": 9000, "hostPort": 0, "protocol": "tcp" }]
+      "portMappings": [
+        {
+          "containerPort": 9000,
+          "hostPort": 0,
+          "protocol": "tcp",
+          "labels": {}
+         }
+      ]
     }
   },
   "healthChecks": [
